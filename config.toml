@@ -17,7 +17,7 @@ paginate = 5
   showMenuItems = 2
 
   # show selector to switch language
-  showLanguageSelector = true
+  showLanguageSelector = false
 
   # set theme to full screen width
   fullWidthTheme = false
@@ -81,7 +81,7 @@ paginate = 5
  
     [languages.en.params.logo]
       logoText = "Tom's Website"
-      logoHomeLink = "/"
+      logoHomeLink = "https://users.dcc.uchile.cl/~tvillega"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -89,37 +89,13 @@ paginate = 5
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
-  [languages.es]
-    languageName = "Español"
-    title = "Sitio de Tom"
-    subtitle = "Estudiante de Ciencias en la Computación de la Universidad de Chile"
-    owner = "Tom Villegas"
-    keywords = ""
-    copyright = ""
-    menuMore = "Mostrar más"
-    readMore = "Leer más"
-    readOtherPosts = "Leer otras publicaciones"
-    newerPosts = "Publicaciones más nuevas"
-    olderPosts = "Publicaciones más antiguas"
-    missingContentMessage = "Página no encontrada..."
-    missingBackButtonLabel = "Regresar a la página principal"
-
-    [languages.es.params.logo]
-      logoText = "Sitio de Tom"
-      logoHomeLink = "/"
-
-    [languages.es.menu]
-      [[languages.es.menu.main]]
-        identifier = "acerca-de"
-        name = "Acerca de"
-        url = "/acerca-de"
-      [[languages.en.menu.main]]
-        identifier = "exposicion"
-        name = "Exposición"
-        url = "/exposicion"
+        identifier = "skills"
+        name = "Skills"
+        url = "/skills"
+#      [[languages.en.menu.main]]
+#        identifier = "showcase"
+#        name = "Showcase"
+#        url = "/showcase"
 
 [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
