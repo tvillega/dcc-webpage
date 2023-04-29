@@ -13,11 +13,12 @@ author: "Tom Villegas"
 # Programming Languages
 
 - **Bash**: `Advanced Beginner`
-- **Python**: `Advanced Begginer`
+- **Python**: `Advanced Beginner`
 - **Perl**: `Novice`
 
 # Others
 
-- **hugo**: `Advanced Beginner`
-- **nginx**: `Advanced Beginner`
-- **docker-compose** `Novice`
+- **Latex**: `Competent`
+- **Hugo**: `Advanced Beginner`
+- **Nginx**: `Advanced Beginner`
+- **Docker Compose** `Novice`
