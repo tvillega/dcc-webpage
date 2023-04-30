@@ -20,7 +20,7 @@ paginate = 5
   showMenuItems = 2
 
   # show selector to switch language
-  showLanguageSelector = false
+  showLanguageSelector = true
 
   # set theme to full screen width
   fullWidthTheme = false
@@ -96,10 +96,32 @@ paginate = 5
         identifier = "skills"
         name = "Skills"
         url = "/skills"
-#      [[languages.en.menu.main]]
-#        identifier = "showcase"
-#        name = "Showcase"
-#        url = "/showcase"
+
+  [languages.es]
+    languageName = "Español"
+    contentDir = "content/es"
+    title = "Sitio de Tomás"
+    subtitle = "Estudiante de Ciencias de la Computación en la Universidad de Chile"
+    owner = "Tomás Villegas"
+    keywords = ""
+    copyright = ""
+    menuMore = "Mostrar más"
+    readMore = "Leer más"
+    readOtherPosts = "Leer otras publicaciones"
+    newerPosts = "Publicaciones recientes"
+    olderPosts = "Publicaciones antiguas"
+    missingContentMessage = "Página no encontrada..."
+    missingBackButtonLabel = "Regresar a la página de inicio"
+ 
+    [languages.es.params.logo]
+      logoText = "Sitio de Tomás"
+      logoHomeLink = "https://users.dcc.uchile.cl/~tvillega/es"
+
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        identifier = "acerca-de"
+        name = "Acerca de"
+        url = "/es/acerca-de"
 
 [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
