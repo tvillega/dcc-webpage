@@ -55,11 +55,11 @@ $ chmod go+r public_www/index.html
 
 ## Things go wrong
 
-I setup a website on pure html. I started with something simple and useful: template configuration files for the university's Wi-Fi connections (as seen on my [previous post](https://users.dcc.uchile.cl/~tvillega/posts/beauchef-networks/)). Little did I know that code blocks render so awfuly bad on mobile.
+I setup a website on pure html. I started with something simple and useful: template configuration files for the university's Wi-Fi connections (as seen on my [previous post](https://users.dcc.uchile.cl/~tvillega/posts/beauchef-networks/)). Little did I know that code blocks render so awfully bad on mobile.
 
 Learning CSS just to change the code blocks looked like a great idea at first, but since I have to actually keep the website updated I was adding an extra load on the long term. Therefore, I started searching for website templates. Nothing too fancy, just a static html made by someone else. That's when chaos began.
 
-I downloaded the tar file and unpacked it on a path inside `public_www`. It didn't load. Instead of checking carefuly the permissions, I just slammed `chmod 755` and saw my irresponsibility bear fruit. Then I remembered the system administrator and I told to myself: *"Hey! My sysadmin always uses the other thing, the one with the `+/-`. Let's revert the unnecesary permissions with that"*. That's when I got *the message*:
+I downloaded the tar file and unpacked it on a path inside `public_www`. It didn't load. Instead of checking carefully the permissions, I just slammed `chmod 755` and saw my irresponsibility bear fruit. Then I remembered the system administrator and I told to myself: *"Hey! My sysadmin always uses the other thing, the one with the `+/-`. Let's revert the unnecesary permissions with that"*. That's when I got *the message*:
 ```
 tvillega@servername ~/public_www $ ls -lha theslant
 ls: cannot access 'theslant/.': Permission denied
@@ -108,14 +108,14 @@ drwx------ 1 root         root         242 Apr 27 19:55 iwd
 
 ## My (very much needed) lesson
 
-I explained my situation on the help desk. I couldn't `ls` nor `rm` a directory inside my home directory and I needed a privileged user to give me the read permissions back. Here comes the funny part, I diagnosed wrong my issue. The sysadmin told me *"You hace read permissions, what you don't have it's **execute permissions**. That's why you can't run any command on that path"*.
+I explained my situation on the help desk. I couldn't `ls` nor `rm` a directory inside my home directory and I needed a privileged user to give me the read permissions back. Here comes the funny part, I diagnosed wrong my issue. The sysadmin told me *"You have read permissions, what you don't have it's **execute permissions**. That's why you can't run any command on that path"*.
 
 I've been a faithful Linux user since Windows told me I need to buy a new computer to "fix the issues", however I was socked to realize I didn't fully understand it. The sysadmin told me that as long as I am the owner of the file/directory I can change all of its permissions. I never thought of that. I just *used* the permissions, I never saw the significance about their innerworks.
 
 That day I learned two things:
 
 1. Ownership it's more important than permissions, at least without messing with ACL.
-2. `u|g|o` are symbolic notations for `user|group|others` and are edited appending `[+|-][rwx]`
+2. `u|g|o` are symbolic notations for `user|group|others` and edited appending `[+|-][rwx]`
 3. `4|2|1` are octals for `read|write|execute` and combinated as seen [here](https://users.dcc.uchile.cl/~tvillega/posts/linux-file-permissions/#file-permissions-revisited)
 
 There's also `umask`, something that I always forget and it breaks my `texlive` from time to time.
