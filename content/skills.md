@@ -1,6 +1,7 @@
 ---
 title: "Skills"
 date: "2023-04-26"
+lastmod: "2023-04-29"
 author: "Tom Villegas"
 ---
 
@@ -16,9 +17,11 @@ author: "Tom Villegas"
 - **Python**: `Advanced Beginner`
 - **Perl**: `Novice`
 
-# Others
+# Miscellaneous Tools
 
-- **Latex**: `Competent`
+- **LaTeX**: `Competent`
+- **Git**: `Advanced Beginner`
 - **Hugo**: `Advanced Beginner`
 - **Nginx**: `Advanced Beginner`
-- **Docker Compose** `Novice`
+- **Certbot**: `Novice`
+- **Docker Compose**: `Novice`
