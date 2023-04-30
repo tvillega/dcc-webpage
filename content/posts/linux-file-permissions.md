@@ -1,6 +1,7 @@
 ---
 title: "Linux File Permissions"
 date: "2023-04-27T17:52:26-04:00"
+lastmod: "2023-04-29T21:20:07-04:00"
 author: "Tom Villegas"
 cover: ""
 tags: ["", ""]
