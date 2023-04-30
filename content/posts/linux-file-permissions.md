@@ -17,7 +17,7 @@ ToC: true
 
 Each student in the Computer Science's department is assigned a user on the server. This allow us to have access to a variety of services inside the facilities, from printing quotas to Wi-Fi credentials. My favourite thing it's that they allow us to ssh remotely into our accounts with the [Apache's per-user web directories module](https://httpd.apache.org/docs/2.4/howto/public_html.html) enabled. That's right, this website is sponsored by Universidad de Chile and has been setup from the commodity of my home.
 
-I have had experience setting up websites with `nginx`. I learnt the best practices from debian and I keep everything tidy at all times. However, the department's server is configured using Apache and I am an unprivileged user. That was the first time I truly witnessed the power of Linux file permissions in action.
+I have had experience setting up websites with `nginx`. I learnt the best practices from Debian and I keep everything tidy at all times. However, the department's server is configured using Apache and I am an unprivileged user. That was the first time I truly witnessed the power of Linux file permissions in action.
 
 The instructions where pretty straightforward.
 
@@ -72,7 +72,7 @@ d????????? ? ? ? ?            ? ..
 
 ```
 
-The same error applie for `rm`. I always fix this with `sudo chmod 755`, but as an unprivileged user I found myself hopeless. The system administrator wasn't available on the help desk, so an unmovable `theslant` path lived on my web directory for a long time. It wasn't until the system administrator came back that I got to fix it. And I have to admit it, it was a really good life lesson.
+The same error applied for `rm`. I always fix this with `sudo chmod 755`, but as an unprivileged user I found myself hopeless. The system administrator wasn't available on the help desk, so an unmovable `theslant` path lived on my web directory for a long time. It wasn't until the system administrator came back that I got to fix it. And I have to admit it, it was a really good life lesson.
 
 ## File Permissions (revisited)
 
