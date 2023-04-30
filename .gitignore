@@ -3,3 +3,5 @@ resources/_gen
 public
 publish.sh
 deploy.sh
+get-date.sh
+
