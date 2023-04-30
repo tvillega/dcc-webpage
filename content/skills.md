@@ -21,7 +21,8 @@ author: "Tom Villegas"
 
 - **LaTeX**: `Competent`
 - **Git**: `Advanced Beginner`
-- **Hugo**: `Advanced Beginner`
 - **Nginx**: `Advanced Beginner`
 - **Certbot**: `Novice`
+- **Hugo**: `Novice`
 - **Docker Compose**: `Novice`
+
